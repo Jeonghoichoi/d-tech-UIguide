@@ -1,12 +1,11 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 
-interface ButtonProps {
-  label: string;
-  onClick: () => void;
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
-  return <button onClick={onClick}>{label}</button>;
+const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+  return <button {...props}>{children}</button>;
 };
 
 export default Button;

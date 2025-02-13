@@ -1,14 +1,31 @@
 {
   "name": "@design-guide/ui-guide",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "design guide",
   "author": "Kyobo Digital Development 2 Front Team",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/ui-guide.umd.js",
+  "module": "dist/ui-guide.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npm install --legacy-peer-deps && tsc && vite build"
+    "build": "npm install --legacy-peer-deps && tsc && vite build",
+    "example": "vite --root example",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "README.md",
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-component",
+    "design-guide",
+    "headless ui",
+    "tailwind"
+  ],
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
@@ -24,10 +41,12 @@
     "@types/node": "^20.5.6",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite-plugin-dts": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.7.3",
-    "vite": "^4.4.5"
+    "vite": "^4.0.0"
   }
 }

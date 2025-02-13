@@ -1,46 +1,16 @@
 {
   "compilerOptions": {
-    /* 기본옵션 */
-    "outDir": "./dist",
-    "declaration": true, // 타입 파일(.d.ts) 자동 생성
-    "declarationMap": true,
-    "emitDeclarationOnly": false,
-    "esModuleInterop": true,
-    "target": "ESNext", // ECMAScript 표준이 어느 버전인지와 상관없이 최신 기능을 포함한 최신 버전의 JavaScript를 대상으로 컴파일한다.
-    "useDefineForClassFields": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"], // TypeScript 컴파일러가 이용 가능한 내장 라이브러리의 목록을 설정
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true, //@ts-check 역할과 동일, ts안에서 js허용(js파일 import가능)
-    "sourceMap": true, // TypeScript 코드의 디버깅을 가능하게 한다. -> 타입스크립트로 작업하면서 발생하는 문제를 자바스크립트 로드에서 디버그할 수 있게 해주는 설정
-
-    /* Bundler mode */
-    "module": "ESNext", //속 성은 컴파일된 JavaScript 모듈 형식을 설정합니다. ex: "CommonJS", "ESNext", "UMD", "AMD"
-    "noImplicitAny": true, // 명시적이지 않은 'any' 유형으로 표현식 및 선언 사용 시 오류 발생
-    // "strictNullChecks": true, // 엄격한 null 검사 사용
-    // "strictFunctionTypes": true, // 엄격한 함수 유형 검사 사용
-    // "strictBindCallApply": true, // 엄격한 'bind', 'call', 'apply' 함수 메서드 사용
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    // 변환기 설정
+    "target": "ESNext",
+    "module": "ESNext",
     "jsx": "react-jsx",
-
-    // 기본옵션
-    "strict": true, // 모든 엄격한 유형 검사 옵션 활성화
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    // 파일 임포트 경로 설정 "@/경로"
-    "baseUrl": "./",
-    "paths": {
-      "@": ["src"],
-      "@/*": ["src/*"]
-    }
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  // 컴파일할 파일들을 지정하는 속성!
-  "include": ["src/**/*"],
-  // 컴파일 대상에서 제외할 파일들을 지정하는 속성!
-  "exclude": ["node_modules", "dist"]
+  "include": ["src"]
 }
