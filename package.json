@@ -1,11 +1,33 @@
 {
   "name": "@design-guide/ui-guide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "design guide",
-  "main": "main.js",
+  "author": "Kyobo Digital Development 2 Front Team",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm install --legacy-peer-deps && tsc && vite build"
   },
-  "author": "",
-  "license": "MIT"
+  "dependencies": {
+    "@headlessui/react": "^1.7.19",
+    "@heroicons/react": "^2.2.0",
+    "chart.js": "^4.4.0",
+    "react": "^18.2.0",
+    "react-calendar": "^4.6.1",
+    "react-dom": "^18.2.0",
+    "react-tailwindcss-datepicker": "^1.6.6",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.7.3",
+    "vite": "^4.4.5"
+  }
 }
