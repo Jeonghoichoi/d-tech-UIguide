@@ -1,12 +1,18 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 
-interface RadioProps {
-  label: string;
-  onClick: () => void;
+export interface RadioProps extends InputHTMLAttributes<HTMLInputElement> {
+  name: string;
+  value: string;
+  checked?: boolean;
 }
 
-const Radio: React.FC<RadioProps> = ({ label, onClick }) => {
-  return <button onClick={onClick}>{label}</button>;
+const Radio: React.FC<RadioProps> = ({ name, value, checked, ...props }) => {
+  return (
+    <label>
+      <input type="radio" name={name} value={value} checked={checked} {...props} />
+      {value}
+    </label>
+  );
 };
 
 export default Radio;
