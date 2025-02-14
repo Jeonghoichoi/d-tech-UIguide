@@ -6,7 +6,7 @@ const App: React.FC = () => {
   return (
     <div>
       <h1>UI Guide Example</h1>
-      <Button onClick={() => alert("Button clicked!")}>Click Me</Button>
+      <Button onClick={() => alert("Button clicked!")} label={"Click Me"} />
       <br />
       <br />
       <div>
