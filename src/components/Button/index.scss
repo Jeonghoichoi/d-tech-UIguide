@@ -1,0 +1,65 @@
+// Button
+.kep-button {
+  @apply w-auto px-4 text-sm font-medium rounded;
+}
+
+// Button size
+.kep-button.button-size-small {
+  @apply h-8;
+}
+.kep-button.button-size-medium {
+  @apply h-10;
+}
+.kep-button.button-size-large {
+  @apply h-12;
+}
+
+// Button type
+.kep-button.button-type-primary {
+  @apply text-white bg-indigo-600;
+}
+.kep-button.button-type-secondary {
+  @apply text-gray-800 bg-white border border-solid border-gray-200;
+}
+.kep-button.button-type-soft {
+  @apply text-indigo-600 font-semibold bg-indigo-50;
+}
+.kep-button.button-type-round {
+  @apply text-gray-800 border border-solid border-gray-400 rounded-full;
+}
+
+// Button disabled
+.kep-button:disabled {
+  background-color: #dedede;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+@keyframes KEPRipple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(var(--kep-scale));
+    opacity: 0;
+  }
+}
+
+.kep-ripple {
+  position: relative;
+  overflow: hidden;
+  /* Additional */
+  display: inline-block;
+  padding: 8px 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.kep-ripple .animate {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  border-radius: 50%;
+  animation: KEPRipple 0.5s linear;
+}

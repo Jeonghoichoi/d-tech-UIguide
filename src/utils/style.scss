@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+::selection {
+  background: #355dec;
+  color: #fff;
+}
+.active_link a.active {
+  font-weight: bold;
+  color: #3b82f6;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #dddee0;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 #ffffff;
+}
+
+.required {
+  color: transparent;
+}
+.required:before {
+  content: "* ";
+  margin-left: 0.125rem;
+  color: #e52e2e;
+  vertical-align: text-bottom;
+}
+
+// 우측 컨텐츠 높이값 고정
+.fixed-height {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: calc(100vh - 2rem);
+}
