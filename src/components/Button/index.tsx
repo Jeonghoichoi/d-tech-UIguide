@@ -1,8 +1,9 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { ButtonType } from "./Button.types";
 import "./index.scss";
 
-const KEPButton = ({ size, type, width, height, isDisabled, label, onClick }: ButtonType) => {
+const DDUButton = ({ size, type, width, height, isDisabled, label, onClick }: ButtonType) => {
   const [buttonSize, setButtonSize] = useState("m");
   const [buttonType, setButtonType] = useState("primary");
 
@@ -87,4 +88,4 @@ const KEPButton = ({ size, type, width, height, isDisabled, label, onClick }: Bu
   );
 };
 
-export default KEPButton;
+export default DDUButton;

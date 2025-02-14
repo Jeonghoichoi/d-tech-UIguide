@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@design-guide/ui-guide": "^1.0.8"
+    "@design-guide/ui-guide": "^1.0.9"
   }
 }

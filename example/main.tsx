@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Button, Radio } from "@design-guide/ui-guide";
+import Button1 from "../src/components/Button/index";
 
 const App: React.FC = () => {
   return (
