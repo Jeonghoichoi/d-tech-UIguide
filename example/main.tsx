@@ -10,8 +10,8 @@ const App: React.FC = () => {
       <br />
       <br />
       <div>
-        <Radio name="sample" value="Option 1" />
-        <Radio name="sample" value="Option 2" />
+        <Radio value="Option 1" label={"123"} />
+        <Radio value="Option 2" label={"2324"} />
       </div>
     </div>
   );
