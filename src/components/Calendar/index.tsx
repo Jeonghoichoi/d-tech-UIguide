@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Calendar from "react-calendar";
 import { CalendarType } from "./Calendar.types";
-import "./index.scss";
+import "./index.less";
+
 const DDUCalendar = ({ nextLabel, next2Label, prevLabel, prev2Label, selectRange }: CalendarType) => {
   type ValuePiece = Date | null;
   type Value = ValuePiece | [ValuePiece, ValuePiece];

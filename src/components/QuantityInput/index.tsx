@@ -1,6 +1,6 @@
 import { MinusIcon, PlusIcon } from "@heroicons/react/24/outline";
 import { QuantityInputType } from "./QuantityInput.types";
-import "./index.scss";
+import "./index.less";
 
 const DDUQuantityInput = ({ value, gap, onChangeNumber }: QuantityInputType) => {
   const numPlus = () => {

@@ -29,7 +29,7 @@ const DDUTextArea = ({
   }, [value]);
 
   return (
-    <div className="kep-textArea">
+    <div className="DDU-textArea">
       {label && (
         <label htmlFor={id} className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
           {label}

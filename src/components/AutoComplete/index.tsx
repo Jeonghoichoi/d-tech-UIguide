@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { AutoCompleteType } from "./AutoComplete.types";
-import "./index.scss";
+import "./index.less";
 
 const DDUAutoComplete = ({ data, value, onChange, onSelectedChange }: AutoCompleteType) => {
   const [filteredData, setFilteredData] = useState<any>(data); // 데이터 형식은 자율성을 준다.
@@ -78,7 +78,7 @@ const DDUAutoComplete = ({ data, value, onChange, onSelectedChange }: AutoComple
   };
 
   return (
-    <div ref={searchRef} className="kep-autoComplete">
+    <div ref={searchRef} className="DDU-autoComplete">
       <input
         ref={inputRef}
         onKeyDown={handleinputKeyDown}

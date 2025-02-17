@@ -2,10 +2,8 @@ import { ToggleType } from "./Toggle.types";
 import "./index.less";
 
 const DDUToggle = ({ id, name, label, checked, isShortType, disabled, onChange }: ToggleType) => {
-  console.log(isShortType);
-
   return (
-    <div className="kep-toggle">
+    <div className="DDU-toggle">
       <label htmlFor={id ? id : "checkbox"} className="relative h-8 w-14 cursor-pointer inline-flex items-center">
         <input
           type="checkbox"

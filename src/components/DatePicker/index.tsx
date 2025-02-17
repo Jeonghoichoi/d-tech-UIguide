@@ -1,6 +1,6 @@
 import Datepicker from "react-tailwindcss-datepicker";
 import { DatepickerType } from "./DatePicker.types";
-import "./index.scss";
+import "./index.less";
 
 const DDUDatePicker = ({
   themeColor,

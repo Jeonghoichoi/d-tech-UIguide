@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "@/components/Button/index";
 import { ButtonGroupType } from "./ButtonGroup.types";
-import "./index.scss";
+import "./index.less";
 
 // DDU Digital Technology Development UI
 const DDUButtonGroup = ({ orientation, children }: ButtonGroupType) => {

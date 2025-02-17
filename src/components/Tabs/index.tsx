@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { classNames } from "@/utils/index";
 import { Tab } from "@headlessui/react";
 import { TabsType } from "./Tabs.types";
-import "./index.scss";
+import "./index.less";
 
 const KEPTabs = ({ items, type, isVertical, defaultIndex, selectedIndex, onChange, height, panelsMarginOn }: TabsType) => {
   const [tabType, setTabType] = useState("primary");

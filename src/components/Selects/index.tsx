@@ -3,7 +3,7 @@ import { scrollLock, classNames } from "@/utils/index";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { SelectsType } from "./Selects.types";
-import "./index.scss";
+import "./index.less";
 
 const DDUSelects = ({ width, height, items, selectedMeta, onChange }: SelectsType) => {
   // 너비 및 높이값 계산

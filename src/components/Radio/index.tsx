@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { RadioType } from "./Radio.types";
-import "./index.scss";
+import "./index.less";
 
 // DDU Digital Technology Development UI
 const DDURadio = ({ label, value, checked, isDisabled, readOnly, onChange }: RadioType) => {

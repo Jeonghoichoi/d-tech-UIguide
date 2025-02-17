@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ButtonType } from "./Button.types";
-import "./index.scss";
+import "./index.less";
 
 // DDU Digital Technology Development UI
 const DDUButton = ({ size, type, width, height, isDisabled, label, onClick }: ButtonType) => {

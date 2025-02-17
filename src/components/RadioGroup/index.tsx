@@ -1,7 +1,7 @@
 import React from "react";
 import Radio from "@/components/Radio";
 import { RadioGroupType } from "./RadioGroup.types";
-import "./index.scss";
+import "./index.less";
 
 // DDU Digital Technology Development UI
 const DDUButtonGroup = ({ value, orientation, children, onChange }: RadioGroupType) => {
