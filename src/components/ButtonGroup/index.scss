@@ -1,0 +1,33 @@
+.DDU-buttonGroup {
+  @apply rounded-md;
+  > * {
+    @apply rounded-none;
+  }
+}
+
+// horizontal 정렬
+.DDU-buttonGroup.horizontal {
+  > * {
+    @apply border border-gray-400;
+  }
+  > *:first-child {
+    @apply rounded-tl-md rounded-bl-md border-r-0;
+  }
+  > *:last-child {
+    @apply rounded-tr-md rounded-br-md border-l-0;
+  }
+}
+
+// vertical 정렬
+.DDU-buttonGroup.vertical {
+  @apply flex-col;
+  > * {
+    @apply rounded-none;
+  }
+  > *:first-child {
+    @apply rounded-tl-md rounded-tr-md border-b-0;
+  }
+  > *:last-child {
+    @apply rounded-br-md rounded-bl-md border-t-0;
+  }
+}

@@ -1,0 +1,26 @@
+.kep-input-container {
+  width: inherit;
+  @apply flex gap-x-2 items-center;
+  // 레이블
+  .kep-input-label {
+    @apply inline-block mb-auto mt-3 min-w-fit text-sm font-medium text-gray-700;
+  }
+
+  // 플롯팅 인풋 레이블 처리
+  .kep-input-floating {
+    @apply w-full;
+    .floating-label {
+      @apply rounded-md border border-solid shadow-sm;
+    }
+  }
+
+  // 인풋 태그
+  .kep-input {
+    @apply h-full w-full bg-white rounded-md;
+  }
+  // 인풋 태그
+  .kep-input[readOnly]  {
+    background-color: #e9ecef;
+  }
+
+}

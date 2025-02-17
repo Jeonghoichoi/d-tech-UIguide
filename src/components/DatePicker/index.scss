@@ -1,0 +1,18 @@
+.DDU-datepicker {
+  > * input {
+    min-width: 280px; // input 타입 최소 너비값 지정 -> fold 접었을 때 기준
+    width: 100%;
+  }
+  // > div {
+  //   > div {
+  //     > div:last-child {
+  //       > div:first-child {
+  //         > div:last-child {
+  //           flex-direction: row;
+  //           @apply flex;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+}

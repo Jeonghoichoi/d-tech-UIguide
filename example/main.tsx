@@ -1,13 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Button, Radio } from "@design-guide/ui-guide";
-import Button1 from "../src/components/Button/index";
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>UI Guide Example</h1>
-      <Button onClick={() => alert("Button clicked!")} label={"Click Me"} />
+      <h1>컴포넌트 테스팅 페이지</h1>
+      <Button label={"Click Me"} />
       <br />
       <br />
       <div>

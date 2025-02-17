@@ -1,8 +1,8 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import { ButtonType } from "./Button.types";
 import "./index.scss";
 
+// DDU Digital Technology Development UI
 const DDUButton = ({ size, type, width, height, isDisabled, label, onClick }: ButtonType) => {
   const [buttonSize, setButtonSize] = useState("m");
   const [buttonType, setButtonType] = useState("primary");
@@ -53,7 +53,7 @@ const DDUButton = ({ size, type, width, height, isDisabled, label, onClick }: Bu
     ripple.style.top = `${e.clientY - rect.top}px`;
     ripple.style.opacity = `0.05`;
     ripple.style.background = `#${tag.dataset.color !== undefined ? tag.dataset.color : "e6e6e6"}`;
-    ripple.style.setProperty("--kep-scale", tag.offsetWidth);
+    ripple.style.setProperty("--DDU-scale", tag.offsetWidth);
     tag.appendChild(ripple);
     setTimeout(function () {
       if (ripple.parentNode) {
@@ -63,7 +63,7 @@ const DDUButton = ({ size, type, width, height, isDisabled, label, onClick }: Bu
   };
 
   useEffect(() => {
-    const materialRippleElements = document.querySelectorAll(".kep-ripple");
+    const materialRippleElements = document.querySelectorAll(".DDU-ripple");
     materialRippleElements.forEach((tag) => {
       tag.addEventListener("click", handleRippleClick);
     });
@@ -79,7 +79,7 @@ const DDUButton = ({ size, type, width, height, isDisabled, label, onClick }: Bu
     <button
       disabled={isDisabled}
       type="button"
-      className={`kep-button min-w-[52px] button-size-${buttonSize} button-type-${buttonType} kep-ripple`}
+      className={`DDU-button min-w-[52px] button-size-${buttonSize} button-type-${buttonType} DDU-ripple`}
       onClick={onClick}
       style={{ width: String(width), height: String(height) }}
     >

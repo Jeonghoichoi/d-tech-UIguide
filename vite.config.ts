@@ -1,9 +1,23 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 import dts from "vite-plugin-dts";
 
 export default defineConfig({
   plugins: [react(), dts()],
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "./src"),
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        javascriptEnabled: true,
+        additionalData: `@import "/style.scss";`,
+      },
+    },
+  },
   build: {
     lib: {
       entry: "src/index.ts", // 라이브러리의 진입점

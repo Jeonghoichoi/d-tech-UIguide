@@ -1,0 +1,39 @@
+.DDU-tabs {
+  @apply flex flex-col w-full;
+  .DDU-tab {
+    @apply w-full gap-x-4;
+  }
+}
+
+.DDU-tabs.vertical-type {
+  @apply flex flex-row w-full gap-x-4;
+  .DDU-tab {
+    @apply w-32 flex-col gap-y-4;
+  }
+}
+
+.DDU-tabs {
+  .DDU-tab {
+    padding: 2px;
+    @apply overflow-auto flex items-center;
+    button {
+      @apply w-full flex justify-center rounded-lg text-sm font-medium leading-5;
+    }
+  }
+  // line 타입
+  .DDU-tab.lineType {
+    @apply flex -mb-px items-center border-b-2 rounded-none;
+    button {
+      @apply rounded-none;
+    }
+    [aria-selected="true"] {
+      @apply border-solid border-b-2 border-blue-600 bg-transparent shadow-none;
+    }
+  }
+  // pills 타입
+  .DDU-tab.pillsType {
+    [aria-selected="true"] {
+      @apply bg-blue-700 text-white border-blue-600 shadow-none;
+    }
+  }
+}

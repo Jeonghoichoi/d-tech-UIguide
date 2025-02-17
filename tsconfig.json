@@ -10,7 +10,12 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./", // 파일 임포트 경로 설정 "@/경로"
+    "paths": {
+      "@": ["src"],
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src"]
 }
